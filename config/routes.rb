@@ -3,6 +3,7 @@ Xchangeu::Application.routes.draw do
   resources :sessions, :only => [:new, :create, :destroy]
   resources :academics, :only => [:create, :destroy]
   
+  get "academics/view"
   get "sessions/new"
   get "users/new"
   get "users/show"
@@ -10,6 +11,8 @@ Xchangeu::Application.routes.draw do
   get "pages/contact"
   get "pages/about"
   get "pages/faq"
+  
+  match '/academics', :to => 'academics#view'
   
   match '/signin', :to =>'sessions#new'
   match '/signout', :to =>'sessions#destroy'
