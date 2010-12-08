@@ -9,4 +9,11 @@ class Academic < ActiveRecord::Base
   validates :user_id, :presence => true
   
   default_scope :order => 'academics.created_at DESC'
+  
+  SUBJECTS = [
+    ["Math", "math"],
+    ["English", "english"]
+    ].freeze
+  
+  
 end

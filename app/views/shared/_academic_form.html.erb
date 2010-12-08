@@ -1,14 +1,30 @@
+<% if @academic.nil? %>
+ <h1>No Post Yet</h1>
+<% else %> 
 <%= form_for @academic do |f| %>
-  <%= render 'shared/error_messages', :object => f.object %>
+ <%= render 'shared/error_messages', :object => f.object %>
   <div class="field">
-	sharing
-    <%= select_tag "subject", options_from_collection_for_select(@academic.subject , "subject", "id"), :teach %>
-	for
-	<%= select_tag "subject", options_from_collection_for_select(@academic.subject, "subject", "id"), :learn %>
-	<br>
-	<%= f.text_area :description %>
+	<table>
+	 <tr>
+	  <td>Share</td>
+	  <td><%= options = [["Select a subject", ""]] + Academic::SUBJECTS
+  	       select ("academic", "teach", options) %>
+	  </td>
+	 </tr>
+	 <tr>
+	  <td>For</td>
+	  <td><%= options = [["Select a subject", ""]] + Academic::SUBJECTS
+  	       select ("academic", "learn", options) %>
+	  </td>
+	 </tr>
+	 <tr>
+	  <td>Details</td>
+	  <td><%= f.text_area :description %></td>
+	 </tr>
+	</table>
   </div>
   <div class="actions">
     <%= f.submit "Submit" %>
   </div>
+<% end %>
 <% end %>

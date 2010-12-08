@@ -4,7 +4,7 @@ class PagesController < ApplicationController
     @title = "Home"
     if signed_in?
       @academic = Academic.new
-      @fee_items = current_user.feed.paginate(:page => params[:page])
+      @feed_items = current_user.feed.paginate(:page => params[:page])
     end
   end
 

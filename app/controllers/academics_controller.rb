@@ -4,18 +4,13 @@ class AcademicsController < ApplicationController
   def create
     @academic  = current_user.academics.build(params[:academic])
     if @academic.save
-          flash[:success] = "AcademicX Submitted!"
-          redirect_to root_path
-        else
-          @feed_items = []
-          render 'pages/home'
-        end
-      end
+      flash[:success] = "AcademicX Submitted!"
+      redirect_to root_path
+    else
+      @feed_items = []
+      render 'pages/home'
+    end
   end
-
-  def subject
-    @subject = "Computer Science"
-  end 
 
   def destroy
     @academic.destroy
@@ -28,5 +23,5 @@ class AcademicsController < ApplicationController
       @academic = Academic.find(params[:id])
       redirect_to root_path unless current_user?(@academic.user)
     end
-  
+
 end

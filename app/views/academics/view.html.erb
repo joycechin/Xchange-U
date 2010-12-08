@@ -1,0 +1,13 @@
+<% if signed_in? %>
+<h1>Viewing AcademicX</h1>
+  <table class="front" summary="For signed-in users">
+    <tr>
+      <td class="main">
+        <h1 class="academic">Share what?</h1>
+        <%= render 'shared/academic_form' %>
+		<%= render 'shared/feed' %>
+    </tr>
+  </table>
+<% else %>
+<h5>You are not logged in</h5>
+<% end %>

@@ -1,7 +1,10 @@
-<tr>
+<table>
+ <tr>
   <td class="academic">
-    <span class="learn"><%= academic.learn %></span>
-    <span class="teach"><%= academic.teach %></span>
+   <td>AcademicX</td>
+	<span class="suject">Share<%= academic.learn %>For<%= academic.teach %></span>    
+	
+    <span class="description"><%= academic.description %></span>
     <span class="timestamp">
       Posted <%= time_ago_in_words(academic.created_at) %> ago.
     </span>
