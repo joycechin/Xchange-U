@@ -1,0 +1,3 @@
+/*.update updates the HTML inside the relevant element with the contents of its argument*/
+$("help_form").update("<%= escape_javascript(render('users/unhelp')) %>")
+$("helpers").update('<%= "#{@user.helpers.count} helpers" %>')

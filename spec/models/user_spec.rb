@@ -118,6 +118,26 @@ require 'spec_helper'
       end
     end
   
+    describe "admin attribute" do
+
+      before(:each) do
+        @user = User.create!(@attr)
+      end
+
+      it "should respond to admin" do
+        @user.should respond_to(:admin)
+      end
+
+      it "should not be an admin by default" do
+        @user.should_not be_admin
+      end
+
+      it "should be convertible to an admin" do
+        @user.toggle!(:admin)
+        @user.should be_admin
+      end
+    end
+    
     describe "academic associations" do
     
       before(:each) do
@@ -147,17 +167,81 @@ require 'spec_helper'
         end
 
         it "should include the user's microposts" do
-          @user.feed.include?(@mp1).should be_true
-          @user.feed.include?(@mp2).should be_true
+          @user.feed.should.include?(@mp1)
+          @user.feed.should.include?(@mp2)
         end
 
         it "should not include a different user's microposts" do
           mp3 = Factory(:academic,
                         :user => Factory(:user, :email => Factory.next(:email)))
-          @user.feed.include?(mp3).should be_false
+          @user.feed.should_not include(mp3)
+        end
+        
+        it "should include the microposts of followed users" do
+          helped = Factory(:user, :email => Factory.next(:email))
+          mp3 = Factory(:academic, :user => helped)
+          @user.help!(helped)
+          @user.feed.should include(mp3)
         end
       end
       
     end
-  
+    
+    describe "matchings" do
+
+      before(:each) do
+        @user = User.create!(@attr)
+        @followed = Factory(:user)
+      end
+
+      it "should have a matchings method" do
+        @user.should respond_to(:matchings)
+      end
+      
+      it "should have a helping method" do
+        @user.should respond_to(:helping)
+      end
+      
+      it "should have a helping? method" do
+        @user.should respond_to(:helping?)
+      end
+
+      it "should have a help! method" do
+        @user.should respond_to(:help!)
+      end
+
+      it "should help another user" do
+        @user.help!(@helped)
+        @user.should be_helping(@helped)
+      end
+
+      it "should include the helped user in the helping array" do
+        @user.help!(@helped)
+        @user.helping.should include(@helped)
+      end
+      
+      it "should have an unhelp! method" do
+        @helped.should respond_to(:unhelp!)
+      end
+
+      it "should unhelp a user" do
+        @user.help!(@helped)
+        @user.help!(@helped)
+        @user.should_not be_helping(@helped)
+      end
+      
+      it "should have a reverse_matchings method" do
+        @user.should respond_to(:reverse_matchings)
+      end
+
+      it "should have a helpers method" do
+        @user.should respond_to(:helpers)
+      end
+
+      it "should include the helper in the helpers array" do
+        @user.help!(@helped)
+        @followed.helpers.should include(@user)
+      end
+      
+    end  
   end

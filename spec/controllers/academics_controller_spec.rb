@@ -24,7 +24,7 @@ describe AcademicsController do
 
     describe "failure" do
       before(:each) do
-        @attr = { :learn => "", :teach => "" }
+        @attr = { :learn => "math", :teach => "english" }
       end
 
       it "should not create a academic" do

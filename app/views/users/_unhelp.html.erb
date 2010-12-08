@@ -1,0 +1,6 @@
+<%= form_for current_user.matchings.find_by_helped_id(@user),
+             :html => { :method => :delete },
+			# this uses Ajax to update without leaving the page 
+			:remote => do |f| %>
+  <div class="actions"><%= f.submit "UnHelp" %></div>
+<% end %>

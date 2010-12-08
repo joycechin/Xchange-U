@@ -1,7 +1,21 @@
 class UsersController < ApplicationController
-  before_filter :authenticate, :only => [:index, :edit, :update]
+  before_filter :authenticate, :except => [:show, :new, :create]
   before_filter :correct_user, :only => [:edit, :update]
   before_filter :admin_user,   :only => :destroy
+  
+  def helping
+    @title = "Helping"
+    @user = User.find(params[:id])
+    @users = @user.helping.paginate(:page => params[:page])
+    render 'show_help'
+  end
+  
+  def helpers
+    @title = "helpers"
+    @user = User.find(params[:id])
+    @users = @user.helpers.paginate(:page => params[:page])
+    render 'show_help'
+  end
   
   def index
     @title = "All users"

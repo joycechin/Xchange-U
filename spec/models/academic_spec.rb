@@ -36,4 +36,37 @@ describe Academic do
     
   end
   
+  describe "from_users_helped_by" do
+
+    before(:each) do
+      @other_user = Factory(:user, :email => Factory.next(:email))
+      @third_user = Factory(:user, :email => Factory.next(:email))
+
+      @user_post  = @user.academics.create!(:learn => "foo", :teach => "foo", 
+                                            :content => "foo")
+      @other_post = @other_user.academics.create!(:learn => "foo", :teach => "foo", 
+                                                  :content => "foo")
+      @third_post = @third_user.academics.create!(:learn => "foo", :teach => "foo", 
+                                                  :content => "foo")
+
+      @user.help!(@other_user)
+    end
+
+      it "should have a from_users_helped_by class method" do
+        Academic.should respond_to(:from_users_helped_by)
+      end
+
+      it "should include the helped user's microposts" do
+        Academic.from_users_helped_by(@user).should include(@other_post)
+      end
+
+      it "should include the user's own academics" do
+        Academic.from_users_helped_by(@user).should include(@user_post)
+      end
+
+      it "should not include an unhelped user's microposts" do
+        Academic.from_users_helped_by(@user).should_not include(@third_post)
+      end
+    end
+  
 end

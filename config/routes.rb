@@ -1,7 +1,13 @@
 Xchangeu::Application.routes.draw do
-  resources :users
+  resources :users do
+    member do
+      get :helping, :helpers
+    end
+  end
+  
   resources :sessions, :only => [:new, :create, :destroy]
   resources :academics, :only => [:create, :destroy]
+  resources :matchings, :only => [:create, :destroy]
   
   get "academics/view"
   get "sessions/new"

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101208002319) do
+ActiveRecord::Schema.define(:version => 20101208180625) do
 
   create_table "academics", :force => true do |t|
     t.string   "teach"
@@ -23,6 +23,14 @@ ActiveRecord::Schema.define(:version => 20101208002319) do
 
   add_index "academics", ["user_id"], :name => "index_academics_on_user_id"
 
+  create_table "matchings", :force => true do |t|
+    t.integer  "helper_id"
+    t.integer  "helped_id"
+    t.string   "type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
@@ -30,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20101208002319) do
     t.datetime "updated_at"
     t.string   "encrypted_password"
     t.string   "salt"
+    t.boolean  "admin",              :default => false
   end
 
 end

@@ -1,0 +1,9 @@
+<% unless current_user?(@user) %>
+  <div id="help_form">
+  <% if current_user.helping?(@user) %>
+    <%= render 'unhelp' %>
+  <% else %>
+    <%= render 'help' %>
+  <% end %>
+  </div>
+<% end %>

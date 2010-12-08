@@ -5,6 +5,14 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation
   
   has_many :academics, :dependent => :destroy
+  has_many :matchings, :foreign_key => "helper_id",
+              :dependent => :destroy
+  has_many :helping, :through => :matchings, :source => :helped
+  
+  has_many :reverse_matchings, :foreign_key => "helped_id",
+                  :class_name => "Matching",
+                  :dependent => :destroy
+  has_many :helpers, :through => :reverse_matchings, :source => :helper
   
   # regular expression to ensure @college or @fas harvard emails
   email_regex = /\A[a-z\d\-.]+@(college|fas)\.harvard\.edu$/i
@@ -22,8 +30,9 @@ class User < ActiveRecord::Base
   
   before_save :encrypt_password
 
+  # implementing a method to find all the academic posts from users helped by the other user
   def feed
-      Academic.where("user_id = ?", id)
+      Academic.from_users_helped_by(self)
   end
   
   # checks if submitted pw == encrypted pw on file
@@ -44,27 +53,41 @@ class User < ActiveRecord::Base
     (user && user.salt == cookie_salt) ? user : nil
   end
   
-  private # back-end methods only
-
-  # method to encrypt password, using salt(unique to each user)
-	def encrypt_password
-      self.salt = make_salt if new_record?
-	  self.encrypted_password = encrypt(password)
-  end
-
-	# method to encrypt strings
-  def encrypt(string)
-      secure_hash("#{salt}--#{string}") 
-	end
-
-	# salt: encryption of time of user creation+password
-	def make_salt
-	  secure_hash("#{Time.now.utc}--#{password}")
+  def helping?(helped)
+	  matchings.find_by_helping_id(helped)
 	end
 	
-	# secure hash function SHA2 from the digest lib
-	def secure_hash(string)
-	  Digest::SHA2.hexdigest(string)
+	def help!(helped)
+	  matchings.create!(:helped_id => helped.id)
 	end
+	
+	def unhelp!(helped)
+	  matchings.find_by_helping_id(helped).destroy
+	end
+  
+  private # back-end methods only
+
+    # method to encrypt password, using salt(unique to each user)
+	  def encrypt_password
+      self.salt = make_salt if new_record?
+	    self.encrypted_password = encrypt(password)
+    end
+
+	  # method to encrypt strings
+    def encrypt(string)
+        secure_hash("#{salt}--#{string}") 
+	  end
+
+	  # salt: encryption of time of user creation+password
+	  def make_salt
+	    secure_hash("#{Time.now.utc}--#{password}")
+	  end
+	
+	  # secure hash function SHA2 from the digest lib
+	  def secure_hash(string)
+	    Digest::SHA2.hexdigest(string)
+	  end
+	
+
 	
 end

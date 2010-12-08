@@ -5,6 +5,7 @@
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
+	  <%= render 'help_form' if signed_in? %>
 	  <% unless @user.academics.empty? %>
 	    <table class="academics" summary="User academics">
 	      <%= render @academics %>
@@ -15,7 +16,8 @@
     <td class="sidebar round">
       <strong>Name</strong> <%= @user.name %><br />
       <strong>URL</strong>  <%= link_to user_path(@user), @user %>
-	  <strong>Academics</strong> <%= @user.academics.count %>
+	  <strong>AcademicX</strong> <%= @user.academics.count %>
+      <%= render 'shared/stats' %>
     </td>
   </tr>
 </table>

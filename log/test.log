@@ -1,0 +1,784 @@
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+Rendered layouts/_header.html.erb (4.1ms)
+Rendered pages/home.html.erb within layouts/application (10.7ms)
+Completed   in 15ms
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 4ms
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.2ms)
+Completed   in 4ms
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 3ms
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 3ms
+  Processing by SessionsController#new as HTML
+Completed   in 8ms
+  Processing by SessionsController#new as HTML
+Completed   in 5ms
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}}
+Completed   in 0ms
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 15:16:11 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+
+
+Started GET "/contact" for 127.0.0.1 at Mon Dec 06 15:16:11 -0600 2010
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+
+
+Started GET "/about" for 127.0.0.1 at Mon Dec 06 15:16:11 -0600 2010
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+
+
+Started GET "/help" for 127.0.0.1 at Mon Dec 06 15:16:11 -0600 2010
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Dec 06 15:16:11 -0600 2010
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 15:16:11 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 4ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 15:16:11 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 4ms
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Dec 06 15:16:11 -0600 2010
+  Processing by SessionsController#new as HTML
+Completed   in 6ms
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+Rendered layouts/_header.html.erb (3.9ms)
+Rendered pages/home.html.erb within layouts/application (10.3ms)
+Completed   in 14ms
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 4ms
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 2ms
+  Processing by SessionsController#new as HTML
+Completed   in 8ms
+  Processing by SessionsController#new as HTML
+Completed   in 5ms
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}}
+Completed   in 0ms
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 1ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 15:22:58 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+
+
+Started GET "/contact" for 127.0.0.1 at Mon Dec 06 15:22:58 -0600 2010
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+
+
+Started GET "/about" for 127.0.0.1 at Mon Dec 06 15:22:58 -0600 2010
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 3ms
+
+
+Started GET "/help" for 127.0.0.1 at Mon Dec 06 15:22:58 -0600 2010
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Dec 06 15:22:58 -0600 2010
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 15:22:58 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 4ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 15:22:58 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Dec 06 15:22:58 -0600 2010
+  Processing by SessionsController#new as HTML
+Completed   in 6ms
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+Rendered layouts/_header.html.erb (4.2ms)
+Rendered pages/home.html.erb within layouts/application (10.7ms)
+Completed   in 14ms
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.2ms)
+Completed   in 4ms
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 3ms
+  Processing by SessionsController#new as HTML
+Completed   in 8ms
+  Processing by SessionsController#new as HTML
+Completed   in 5ms
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}}
+Completed   in 0ms
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 15:37:03 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+
+
+Started GET "/contact" for 127.0.0.1 at Mon Dec 06 15:37:03 -0600 2010
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+
+
+Started GET "/about" for 127.0.0.1 at Mon Dec 06 15:37:03 -0600 2010
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+
+
+Started GET "/help" for 127.0.0.1 at Mon Dec 06 15:37:03 -0600 2010
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Dec 06 15:37:03 -0600 2010
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 15:37:03 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 5ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 15:37:03 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 4ms
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Dec 06 15:37:03 -0600 2010
+  Processing by SessionsController#new as HTML
+Completed   in 7ms
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (10.5ms)
+Completed   in 14ms
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 4ms
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 4ms
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 3ms
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 4ms
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 2ms
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 6ms
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}}
+Completed   in 0ms
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 16:01:04 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+
+
+Started GET "/contact" for 127.0.0.1 at Mon Dec 06 16:01:04 -0600 2010
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+
+
+Started GET "/about" for 127.0.0.1 at Mon Dec 06 16:01:04 -0600 2010
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+
+
+Started GET "/help" for 127.0.0.1 at Mon Dec 06 16:01:04 -0600 2010
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Dec 06 16:01:04 -0600 2010
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 16:01:04 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 4ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 16:01:04 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Dec 06 16:01:05 -0600 2010
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.9ms)
+Rendered layouts/_header.html.erb (3.9ms)
+Rendered pages/home.html.erb within layouts/application (10.3ms)
+Completed   in 14ms
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 4ms
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 4ms
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 4ms
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 8ms
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}}
+Completed   in 0ms
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 16:01:25 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+
+
+Started GET "/contact" for 127.0.0.1 at Mon Dec 06 16:01:25 -0600 2010
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+
+
+Started GET "/about" for 127.0.0.1 at Mon Dec 06 16:01:25 -0600 2010
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+
+
+Started GET "/help" for 127.0.0.1 at Mon Dec 06 16:01:25 -0600 2010
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Dec 06 16:01:25 -0600 2010
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 16:01:25 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.2ms)
+Completed   in 4ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 16:01:25 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 5ms
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Dec 06 16:01:25 -0600 2010
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (0.9ms)
+Completed   in 4ms
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (20.8ms)
+Rendered pages/home.html.erb within layouts/application (28.9ms)
+Completed   in 35ms
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.8ms)
+Rendered layouts/_header.html.erb (1.2ms)
+Completed   in 5ms
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (1.6ms)
+Completed   in 20ms
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.3ms)
+Completed   in 3ms
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.2ms)
+Completed   in 5ms
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (1.3ms)
+Rendered layouts/_header.html.erb (1.6ms)
+Completed   in 4ms
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 6ms
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.4ms)
+Completed   in 4ms
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}}
+Completed   in 0ms
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#index as HTML
+Completed   in 1ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 16:57:21 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+
+
+Started GET "/contact" for 127.0.0.1 at Mon Dec 06 16:57:21 -0600 2010
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 3ms
+
+
+Started GET "/about" for 127.0.0.1 at Mon Dec 06 16:57:21 -0600 2010
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+
+
+Started GET "/help" for 127.0.0.1 at Mon Dec 06 16:57:21 -0600 2010
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Dec 06 16:57:21 -0600 2010
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 16:57:21 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.8ms)
+Rendered layouts/_header.html.erb (1.3ms)
+Completed   in 6ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 16:57:21 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (0.9ms)
+Completed   in 4ms
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Dec 06 16:57:21 -0600 2010
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.8ms)
+Rendered layouts/_header.html.erb (0.9ms)
+Completed   in 4ms
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered pages/home.html.erb within layouts/application (10.4ms)
+Completed   in 14ms
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 4ms
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.3ms)
+Completed   in 3ms
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.2ms)
+Completed   in 6ms
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 4ms
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}}
+Completed   in 1ms
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"password"=>"[FILTERED]", "email"=>"email@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#index as HTML
+Completed   in 1ms
+  Processing by UsersController#new as HTML
+Completed   in 53ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#new as HTML
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>""}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"name"=>"New User", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"user@example.com"}}
+Completed   in 0ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 17:34:54 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+
+
+Started GET "/contact" for 127.0.0.1 at Mon Dec 06 17:34:54 -0600 2010
+  Processing by PagesController#contact as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.1ms)
+Completed   in 3ms
+
+
+Started GET "/about" for 127.0.0.1 at Mon Dec 06 17:34:54 -0600 2010
+  Processing by PagesController#about as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 3ms
+
+
+Started GET "/help" for 127.0.0.1 at Mon Dec 06 17:34:54 -0600 2010
+
+
+Started GET "/signup" for 127.0.0.1 at Mon Dec 06 17:34:54 -0600 2010
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 17:34:54 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Dec 06 17:34:54 -0600 2010
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (0.9ms)
+Completed   in 4ms
+
+
+Started GET "/signin" for 127.0.0.1 at Mon Dec 06 17:34:54 -0600 2010
+  Processing by SessionsController#new as HTML
+Rendered layouts/_stylesheets.html.erb (0.8ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Completed   in 4ms
